@@ -181,6 +181,28 @@ textarea {
   clear: both;
 }
 
+/* custom design*/
+body{
+  min-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.full-width-height{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* custom desgin ends */
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
