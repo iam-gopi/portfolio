@@ -1,114 +1,731 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <title>Gopi - FullStack Web Developer</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-
-    <meta name="theme-color" content="#fafafa" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>Gopi - FullStack Web/Mobile Developer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="vendors/popup/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
-
   <body>
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <div class="container-fluid">
-      <div class="full-width-height">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Gopi</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container box_1620">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="index.html"
+              ><img src="./img/logo.png" alt="" srcset=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Pages</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="elements.html">Elements</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Blog</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="single-blog.html"
+                        >Blog Details</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
-        <!-- navbar end -->
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
 
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-2"></div>
-          <div class="col-lg-4 col-md-4 col-sm-2"></div>
-          <div class="col-lg-4 col-md-4 col-sm-2"><img src="./img/gopi.png" alt="Gopi" /></div>
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div class="container box_1620">
+        <div class="banner_inner d-flex align-items-center">
+          <div class="banner_content">
+            <div class="media">
+              <div class="d-flex">
+                <img style="width: 500px;" src="img/gopi.png" alt="" />
+              </div>
+              <div class="media-body">
+                <div class="personal_text">
+                  <h6>Hello Everybody, i am</h6>
+                  <h3>Gopi P</h3>
+                  <h4>Happy to see you here. Hope you like my profile</h4>
+                  <p>
+                    I'm a FullStack Web/Mobile Developer. I can Design and
+                    Develop websites and mobile applications your business,
+                    startups and for you as well. I can even customize web and
+                    mobile applications you have. I'm doing video authoring as
+                    well.
+                  </p>
+                  <ul class="list basic_info">
+                    <!-- <li>
+                      <a href="#"
+                        ><i class="lnr lnr-calendar-full"></i> 31st December,
+                        1992</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="lnr lnr-phone-handset"></i> 44 (012) 6954
+                        783</a
+                      >
+                    </li> -->
+                    <li>
+                      <a
+                        href="mailto:programmingwithgopi@gmail.com"
+                        target="_blank"
+                        ><i class="lnr lnr-envelope"></i>
+                        programmingwithgopi@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="lnr lnr-home"></i> Tiruvallur, TamilNadu</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="list personal_social">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/techcraters"
+                        target="_blank"
+                      >
+                        <i class="fa fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/gopipofficial"
+                        target="_blank"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/gopipofficial/"
+                        target="_blank"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!--================End Home Banner Area =================-->
 
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
-        );
-    </script>
-    <script src="./js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!--================Welcome Area =================-->
+    <section class="welcome_area p_120">
+      <div class="container">
+        <div class="row welcome_inner">
+          <div class="col-lg-6">
+            <div class="welcome_text">
+              <h4>About Myself</h4>
+              <p>
+                IT Guy with over 6+ years of experience in FullStack Web/Mobile Application development. I'm a design-centric and always curious to learn new concepts. I try to implement the learned concepts in day to day work as and when required. <br /><br />I know Time and Tide wait for none. I always keep my skills sharp and always learn new technologies. I update myself often to keep myself suits for working on new technologies. I considered persons are the main source of Knowledge and also knowledging sharing is worth. I started doing video authoring for the past 2 years and have released courses to many online websites and startups. <br /><br /> Since started with the Freelancing 7 years ago, I got to work for many startup's and projects. I got many interesting projects with latest technologies all because of my attitude towards learning. I'm the guy who loves to listen to songs and play cricket. An, I'm a foodie too.
+              </p>
+              <!-- <div class="row">
+                <div class="col-md-4">
+                  <div class="wel_item">
+                    <i class="lnr lnr-database"></i>
+                    <h4>$2.5M</h4>
+                    <p>Total Donation</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="wel_item">
+                    <i class="lnr lnr-book"></i>
+                    <h4>1465</h4>
+                    <p>Total Projects</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="wel_item">
+                    <i class="lnr lnr-users"></i>
+                    <h4>3965</h4>
+                    <p>Total Volunteers</p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tools_expert">
+              <div class="skill_main">
+                <div class="skill_item">
+                  <h4>ASP.NET & WCF <span class="counter">85</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill_item">
+                  <h4>C# <span class="counter">90</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill_item">
+                  <h4>MVC <span class="counter">88</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="88"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill_item">
+                  <h4>Python <spanclass="counter">75</spanclass=>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill_item">
+                  <h4>Angular and ReactJs <span class="counter">85</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill_item">
+                  <h4>Web API <span class="counter">85</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Welcome Area =================-->
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <!--================My Tabs Area =================-->
+    <section class="mytabs_area p_120">
+      <div class="container">
+        <div class="tabs_inner">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Professional Experiences</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Freelancing Experiences</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <ul class="list">
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex">
+                      <p>June 2018 to Current Company</p>
+                    </div>
+                    <div class="media-body">
+                      <h4>Incedo Technologies</h4>
+                      <p>
+                        Senior Software Engineer<br />Chennai
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex">
+                      <p>February 2017 to June 2018</p>
+                    </div>
+                    <div class="media-body">
+                      <h4>DXC Technology</h4>
+                      <p>
+                        Product Developer<br />Chennai
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex">
+                      <p>April 2014 to February 2017</p>
+                    </div>
+                    <div class="media-body">
+                      <h4>Wipro Technologies</h4>
+                      <p>
+                        Project Engineer <br />Chennai
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <ul class="list">
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex">
+                      <p>March 2013 to present</p>
+                    </div>
+                    <div class="media-body">
+                      <h4>Guvi</h4>
+                      <p>
+                        Mentor and Video Author
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex">
+                      <p>March 2015 to present</p>
+                    </div>
+                    <div class="media-body">
+                      <h4>Largstone</h4>
+                      <p>
+                        Software Developer
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="media">
+                    <div class="d-flex">
+                      <p>April 2017 to present</p>
+                    </div>
+                    <div class="media-body">
+                      <h4>Udemy, Simpliv</h4>
+                      <p>
+                        Video Authoring
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End My Tabs Area =================-->
+
+    <!--================Feature Area =================-->
+    <section class="feature_area p_120">
+      <div class="container">
+        <div class="main_title">
+          <h2>Services offering to my clients</h2>
+          <p>
+            Are you looking for an experienced web/mobile application developer to help with your application development or fixing the existing applicaion? I'm ready to help you figure out the best plan of action for your business! See below for my services, and get in touch to learn more about how we can work together.
+          </p>
+        </div>
+        <div class="feature_inner row">
+          <div class="col-lg-4 col-md-6">
+            <div class="feature_item">
+              <i class="flaticon-city"></i>
+              <h4>Architecture</h4>
+              <p>
+                If you're looking for a persion who can design your application for business or personal use. You've landed in a right area. I can technically design or fix any design issues you're having in your application. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="feature_item">
+              <i class="flaticon-skyline"></i>
+              <h4>Web/ Mobile Applications</h4>
+              <p>
+                Since I'm a FullStack developer for over 6 years of experience. I can design and develop Web and Mobile applications for you as per your requirement.  
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="feature_item">
+              <i class="flaticon-sketch"></i>
+              <h4>Enhancement</h4>
+              <p>
+                Do you have old looking web or mobile application which needs to designed per current trend. Come on friend, you're in a right place. I can do so for you with awesome design. Always focused towards clients satisfication.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Feature Area =================-->
+
+    <!--================Home Gallery Area =================-->
+    <!-- <section class="home_gallery_area p_120">
+      <div class="container">
+        <div class="main_title">
+          <h2>Our Latest Featured Projects</h2>
+          <p>Who are in extremely love with eco friendly system.</p>
+        </div>
+        <div class="isotope_fillter">
+          <ul class="gallery_filter list">
+            <li class="active" data-filter="*"><a href="#">All</a></li>
+            <li data-filter=".brand"><a href="#">Vector</a></li>
+            <li data-filter=".manipul"><a href="#">Raster</a></li>
+            <li data-filter=".creative"><a href="#">UI/UX</a></li>
+            <li data-filter=".design"><a href="#">Printing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="gallery_f_inner row imageGallery1">
+          <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/gallery/project-1.jpg" alt="" />
+                <a class="light" href="img/gallery/project-1.jpg"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>3D Helmet Design</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/gallery/project-2.jpg" alt="" />
+                <a class="light" href="img/gallery/project-2.jpg"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>2D Vinyl Design</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/gallery/project-3.jpg" alt="" />
+                <a class="light" href="img/gallery/project-3.jpg"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Creative Poster Design</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/gallery/project-4.jpg" alt="" />
+                <a class="light" href="img/gallery/project-4.jpg"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>Embosed Logo Design</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/gallery/project-5.jpg" alt="" />
+                <a class="light" href="img/gallery/project-5.jpg"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>3D Disposable Bottle</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 brand creative">
+            <div class="h_gallery_item">
+              <div class="g_img_item">
+                <img class="img-fluid" src="img/gallery/project-6.jpg" alt="" />
+                <a class="light" href="img/gallery/project-6.jpg"
+                  ><img src="img/gallery/icon.png" alt=""
+                /></a>
+              </div>
+              <div class="g_item_text">
+                <h4>3D Logo Design</h4>
+                <p>Client Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more_btn">
+          <a class="main_btn" href="#">Load More Items</a>
+        </div>
+      </div>
+    </section> -->
+    <!--================End Home Gallery Area =================-->
+
+    <!--================Testimonials Area =================-->
+    <section class="testimonials_area p_120">
+      <div class="container">
+        <div class="main_title">
+          <h2 style="color:#fff">Testimonials</h2>
+          <p style="color:#fff">
+            I've got many appreciation and clients feedback for my high quality work. Here are the few feedbacks from my clients.
+          </p>
+        </div>
+        <div class="testi_inner">
+          <div class="testi_slider owl-carousel">
+            <div class="item">
+              <div class="testi_item">
+                <p>
+                  As conscious traveling Paup ers we must always be oncerned
+                  about our dear Mother Earth. If you think about it, you travel
+                  across her face
+                </p>
+                <h4>Fanny Spencer</h4>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star-half-o"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testi_item">
+                <p>
+                  As conscious traveling Paup ers we must always be oncerned
+                  about our dear Mother Earth. If you think about it, you travel
+                  across her face
+                </p>
+                <h4>Fanny Spencer</h4>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star-half-o"></i></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testi_item">
+                <p>
+                  As conscious traveling Paup ers we must always be oncerned
+                  about our dear Mother Earth. If you think about it, you travel
+                  across her face
+                </p>
+                <h4>Fanny Spencer</h4>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star"></i></a>
+                <a href="#"><i class="fa fa-star-half-o"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Testimonials Area =================-->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area p_120">
+      <div class="container">
+        <div class="row footer_inner">
+          <div class="col-lg-12">
+            <aside class="f_widget social_widget" style="text-align: center">
+              <div class="f_title">
+                <h3>Find Me On</h3>
+              </div>
+              <ul class="list">
+                <li>
+                  <a href="https://www.facebook.com/techcraters" target="_blank"><i class="fa fa-facebook"></i><span class="margin-left">FACEBOOK</span></a>
+                </li> <span class="margin-right">|</span>
+                <li>
+                  <a href="https://twitter.com/gopipofficial" target="_blank"><i class="fa fa-twitter"></i><span class="margin-left">TWITTER</span></a>
+                </li> <span class="margin-right">|</span>
+                <li>
+                  <a href="https://www.instagram.com/gopipofficial/" target="_blank"><i class="fa fa-instagram"></i> <span class="margin-left">INSTAGRAM</span></a>
+                </li> <span class="margin-right">|</span>
+                <li>
+                  <a href="https://github.com/gopipofficial" target="_blank"><i class="fa fa-github"></i><span class="margin-left">GITHUB</span></a>
+                </li> <span class="margin-right">|</span>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCweScmv8kTHZzHVffRLBumg" target="_blank"><i class="fa fa-youtube"></i><span class="margin-left">YOUTUBE</span></a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>
