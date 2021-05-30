@@ -50,7 +50,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 button:focus {
@@ -141,11 +141,12 @@ button:focus {
   margin-right: 45px;
 }
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 12px/120px var(--font-family);
+  /* font: 500 12px/120px var(--font-family); */
   text-transform: uppercase;
   color: #fff;
   padding: 0px;
   display: inline-block;
+  font-weight: 700;
 }
 .header_area .navbar .nav .nav-item .nav-link:after {
   display: none;
@@ -216,14 +217,7 @@ button:focus {
   border-bottom: none;
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-  background-image: linear-gradient(
-    to right top,
-    #6e196c,
-    #8c1571,
-    #a90e74,
-    #c60772,
-    #e10a6e
-  );
+  background-image: var(--linear);
   color: #fff;
 }
 @media (min-width: 992px) {
@@ -259,7 +253,7 @@ button:focus {
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
-  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
 }
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
   line-height: 70px;
@@ -332,14 +326,6 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  /* background-image: linear-gradient(
-    to right top,
-    #051937,
-    #362357,
-    #712167,
-    #ad1062,
-    #dd1b48
-  ); */
   background-image: var(--linear);
   margin-bottom: 200px;
 }
@@ -373,7 +359,7 @@ button:focus {
   align-self: center;
 }
 
-.blog_banner {
+/* .blog_banner {
   min-height: 780px;
   position: relative;
   z-index: 1;
@@ -419,7 +405,7 @@ button:focus {
   line-height: 42px;
   padding: 0px 45px;
   border-radius: 5px;
-}
+} */
 
 .banner_box {
   max-width: 1620px;
@@ -431,9 +417,9 @@ button:focus {
   position: relative;
   z-index: 1;
   min-height: 350px;
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image:var(--linear);
+  /* background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); */
   margin-bottom: 120px;
 }
 .banner_area .box_1620 {
@@ -613,9 +599,9 @@ button:focus {
 }
 /* gopi */
 .categories_post:hover .categories_details {
-  background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: var(--linear);
+  /* background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+  background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); */
   opacity: 0.851;
 }
 
@@ -2105,35 +2091,35 @@ h6 {
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-1 {
-  background-color: #6382e6;
+  background-color: #051752;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-2 {
-  background-color: #e66686;
+  background-color: #5e061c;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-3 {
-  background-color: #f09359;
+  background-color: #a34307;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-4 {
-  background-color: #73fbaf;
+  background-color: #034922;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-5 {
-  background-color: #73fbaf;
+  background-color: #3b6307;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-6 {
-  background-color: #6382e6;
+  background-color: #03238d;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-7 {
-  background-color: #a367e7;
+  background-color: #063446;
 }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-8 {
-  background-color: #e66686;
+  background-color: #500543;
 }
 
 .single-gallery-image {
@@ -3691,4 +3677,12 @@ h6 {
 
 .float-left{
   float:left;
+}
+
+.about-content {
+  font-weight: 600;
+}
+
+.bg {
+  
 }
