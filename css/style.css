@@ -326,7 +326,7 @@ button:focus {
   position: relative;
   z-index: 1;
   background-image: var(--linear);
-  margin-bottom: 113px;
+  margin-bottom: 113pxs;
 }
 .home_banner_area .box_1620 {
   min-height: 700px;
