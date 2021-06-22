@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
 :root {
+  --yellow: #ffae57;
+  --dark-blue:#1d2433;
+  --font-blue: #8695b7;
   --font-family: "Quicksand", sans-serif;
   --shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.6);
   --linear: linear-gradient(
@@ -10,7 +13,7 @@
     #712167,
     #ad1062,
     #dd1b48
-  );
+  ); 
 }
 
 .list {
@@ -39,7 +42,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   font-family: var(--font-family);
-  font-weight: normal;
   color: #777777;
 }
 
@@ -51,6 +53,7 @@ h5,
 h6 {
   font-family: var(--font-family);
   font-weight: 700;
+  color: var(--yellow)
 }
 
 button:focus {
@@ -110,7 +113,7 @@ button:focus {
 .main_title h2 {
   font-family: var(--font-family);
   font-size: 36px;
-  color: #644c4c;
+  color: var(--yellow);
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -212,13 +215,16 @@ button:focus {
   display: block;
   margin-right: 0px;
 }
+
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
   border-bottom: none;
 }
+
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-  background-image: var(--linear);
+  background-image: var(--dark-blue);
   color: #fff;
 }
+
 @media (min-width: 992px) {
   .header_area .navbar .nav .nav-item.submenu:hover ul {
     visibility: visible;
@@ -248,11 +254,11 @@ button:focus {
   top: -70px;
   left: 0;
   right: 0;
-  background: #000;
+  background: var(--dark-blue);
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
 }
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
   line-height: 70px;
@@ -325,22 +331,20 @@ button:focus {
 .home_banner_area {
   position: relative;
   z-index: 1;
-  background-image: var(--linear);
-  margin-bottom: 78px;
+  background: var(--dark-blue);
+  padding-top: 98px;
+  min-height: 100vh;
+}
+
+.font-color-yellow {
+  color: var(--yellow);
 }
 .home_banner_area .box_1620 {
-  min-height: 700px;
-  border-radius: 12px;
-  position: relative;
-  bottom: -114px;
-  background: #fff;
-  padding: 30px;
-  box-shadow: var(--shadow);
+  background: var(--dark-blue);
 }
 .home_banner_area .banner_inner {
   position: relative;
   width: 100%;
-  /* min-height: 700px; */
   display: flex;
 }
 .home_banner_area .banner_inner .banner_content {
@@ -2990,7 +2994,7 @@ h6 {
 /* Welcome Area css
 ============================================================================================ */
 .welcome_inner .welcome_img {
-  background: #eeeeee;
+  background: var(--dark-blue);
   margin-left: 40px;
   padding-left: 30px;
   padding-right: 30px;
@@ -3000,16 +3004,27 @@ h6 {
   margin-top: -30px;
 }
 
+.hr-class{
+  background: #6679a4;
+    width: 90%;
+    margin-bottom: 4em;
+}
+
+.darkblue {
+  background: var(--dark-blue);
+}
+
 .welcome_text h4 {
-  color: #222222;
-  font-family: "Heebo", sans-serif;
+  color: var(--yellow);
+  font-family: var(--font-family);
   font-size: 36px;
   margin-bottom: 18px;
   text-transform: uppercase;
 }
 .welcome_text p {
   max-width: 495px;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-family);
+  color:var(--font-blue);
   margin-bottom: 40px;
   font-size: 17px;
 }
@@ -3285,31 +3300,29 @@ h6 {
 
 .personal_text h6 {
   font-size: 14px;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-family);
   text-transform: uppercase;
   letter-spacing: 2.1px;
-  /* font-weight: normal; */
   margin-bottom: 12px;
-  color: #222222;
 }
 .personal_text h4 {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-family);
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #222222;
 }
 .personal_text h3 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #222222;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 .personal_text p {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--font-family);
   max-width: 540px;
-  color: #777777;
+  color: var(--font-blue);
   margin-bottom: 40px;
 }
 .personal_text .basic_info li {
